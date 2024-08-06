@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web_Developer</title>
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+</head>
+<body>
+    <div id="whole-container">
+        <header>
+        <div id="head">
+            <a href="{% url "gallery" %}" id="logo">GOPI</a>
+            <a href="tel:+91 6379125530" id="contact-btn" class="btn-btn">CONTACT ME</a>
+        </div>
+        <div id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <div id="content">
+        <div id="menu">
+            <div>
+                <a href="{% url "myhomepage" %}"><img src="{% static "/images/icons8-home-48.png" %}" alt="" width="33px" class="icons" title="HOME"></a>
+                <a href="{% url "about" %}"><img src="{% static "/images/icons8-admin-48.png" %}" alt="" width="33px" class="icons" title="ABOUT"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-trending-48.png" %}" alt="" width="33px" class="icons" title="TEMPLATES"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-code-48.png" %}" alt="" width="33px" class="icons" title="CODE"></a>
+                <a href="{% url "contact" %}"><img src="{% static "/images/icons8-contact-48.png" %}" alt="" width="33px" class="icons" title="CONTACT"></a>
+                <label>Social Media</label>
+                <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+                <label>Projects</label>
+                <a href="#"><img src="{% static "/images/icons8-bakery-48.png" %}" alt="" width="33px" class="icons" title="MY PROJECTS"></a>
+            </div>   
+        </div>
+        <div id="content-flex">
+        <div id="home-page">
+           <p id="home-thought">
+            Life's ease for some, perseverance for others, yet both arrive at the same destination, Some goals are so worthy, it’s glorious even to fail.
+           </p>
+           <button class="btn-btn" id="home-btn">HIRE ME</button>
+        </div> 
+           
+        <div id="about-page">
+            <div>
+                <p class="sub-topics">ABOUT</p>
+            </div>
+            <div id="box-head">
+                    <img src="{% static "images/port-img.jpeg" %}" alt="" id="abt-image">
+                    <div>
+                        <a href="https://www.instagram.com/x._indianarmy_.x/" id="insta-link">
+                          <img src="{% static "images/icons8-instagram-48.png" %}" alt="" width="33px" id="insta-abt">
+                          <span>Follow Me</span>
+                        </a>
+                </div>
+            </div>
+            <p id="abt-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quaerat, laudantium reiciendis minima inventore, omnis rem a, excepturi amet recusandae eveniet! Dolore molestiae ab odit voluptates quam sit ex, porro unde repellendus itaque voluptatum excepturi ducimus fugiat et totam voluptatem officia magnam perferendis deserunt. Nobis et hic quidem accusamus nihil iure magnam quis odit rem enim ipsam ipsa, incidunt fugit consectetur fuga, voluptatem consequuntur ducimus ut similique. Alias quidem porro consequatur deserunt dolor sapiente quibusdam quod aliquid atque qui nulla odio libero magni harum voluptatum, repudiandae amet debitis optio molestiae tenetur? Iste dolor aliquam hic reiciendis quia, nihil maxime in.</p>
+        <div id="abt-skills">
+            <div>
+                <h3>
+                    Figma Design
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut atque consequatur aspernatur sequi eaque.</p>
+            </div>
+            <div>
+                <h3>
+                    Front-End
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut atque consequatur aspernatur sequi eaque.</p>
+            </div>
+            <div>
+                <h3>
+                    Back-End
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aut atque consequatur aspernatur sequi eaque.</p>
+            </div>
+        </div>
+        <button id="abt-btn">KNOW MORE</button>
+        </div>
+        <div id="work-page">
+            <h2>What I Will do</h2>
+            <div>
+            <div>
+                <h3>Works</h3>
+                <p>>> UI/UX Design</p>
+                <p>>> Tiny Websites</p>
+                <p>>> Huge Websites</p>
+                <p>>> Portfolio</p>
+                <p>>> Educations</p>
+                <p>>> Multipage Websites</p>
+            </div>
+            <div>
+                <h3>Free</h3>
+                <p>>> Hosting Free(1 year)</p>
+                <p>>> SSL</p>
+                <p>>> lorem</p>
+                <p>>> Card design</p>
+                <p>>> No Extra or hidden Charges</p>
+            </div>
+            <div>
+                <h3>Maintenance</h3>
+                <p>>> Keep Bugs Free</p>
+                <p>>> 24/7 Support</p>
+                <p>>> Updates</p>
+                <p>>> Weekly Checking </p>
+            </div>
+        </div>
+        </div>
+        <div id="templates-page">
+            <div><p class="sub-topics">TEMPLATES</p></div>
+            <div id="pro-images">
+                <div>
+                    <div class="mob-ani">
+                        <a href=""><p class="mob-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consequatur!</p></a>
+                    <img src="{% static "images/pexels-fabian-wiktor-3466355.jpg" %}" alt="" width="200px" height="200px">
+                </div>
+                    <div  class="mob-ani">
+                    <img src="{% static "images/pexels-fabian-wiktor-3466355.jpg" %}" alt="" width="200px" height="200px">
+                    <a href=""></a><p class="mob-cont">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, reiciendis.</p>
+                </a>   
+                </div> 
+                </div>
+                <div>
+                <div  class="mob-ani">
+                    <a href="">
+                    <p class="mob-cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, placeat?</p></a>
+                    <img src="{% static "images/pexels-fabian-wiktor-3466355.jpg" %}" alt="" width="200px" height="200px">
+                 
+                </div>
+            </div>
+                <div>
+                    <div class="mob-ani">
+                        
+                    <img src="{% static "images/pexels-fabian-wiktor-3466355.jpg" %}" alt="" width="200px" height="200px">
+                    <a href=""></a><p class="mob-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, in!</p>
+                </a>   
+                    </div>
+                
+                <div class="mob-ani">
+                    <a href="">
+                    <p class="mob-cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptates?</p></a>
+                    <img src="{% static "images/pexels-fabian-wiktor-3466355.jpg" %}" alt="" width="200px" height="200px">
+                   
+                </div>
+            </div>
+            </div>
+            <button class="btn-btn" id="trend-btn">LOAD MORE</button>
+        </div>
+            <div id="project-page">
+                <div class="wrapper">
+                    <div class="overlay">
+                       <input type="radio" name="active" id="radio-1">
+                       <input type="radio" name="active" id="radio-2">
+                       <input type="radio" name="active" id="radio-3">
+                       <input type="radio" name="active" id="radio-4">
+                       <input type="radio" name="active" id="radio-5">
+                       <div class="slider-container">
+                          <div class="images-container">
+                             <img src="{% static "images/cake1(2).jpg" %}" alt="nature">
+                             <img src="{% static "images/cake2.jpg" %}" alt="nature">
+                             <img src="{% static "images/cake3.jpg" %}" alt="nature">
+                             <img src="{% static "images/cake4.jpg" %}" alt="nature">
+                             <img src="{% static "images/cake5.jpg" %}" alt="nature">
+                          </div>
+                       </div>
+                       <div class="control-indicators">
+                          <label for="radio-1" class="indicator indicator1"></label>
+                          <label for="radio-2" class="indicator indicator2"></label>
+                          <label for="radio-3" class="indicator indicator3"></label>
+                          <label for="radio-4" class="indicator indicator4"></label>
+                          <label for="radio-5" class="indicator indicator5"></label>
+                       </div>
+                    </div>          
+                 </div>
+            </div>
+            <div id="contact-page">
+               <div>
+                <p class="sub-topics">GET IN TOUCH WITH ME</p>
+               </div>
+                <div class="container">
+                    <form id="contact-form">
+                        <div id="con-style">
+                        <input type="text" id="username" class="boxes" name="name" required placeholder="Username">
+                        <input type="email" id="email" class="boxes"  name="email" required placeholder="Email">
+                        <input type="text" id="subject" class="boxes"  name="subject" required placeholder="Subject">
+                    </div> 
+                    <div>
+                        <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
+                        <div>
+                            <button type="submit" id="contact-send-btn" class="con-btn">SEND MESSAGE</button>
+                            <button type="submit" id="contact-clr-btn" class="con-btn">CLEAR MESSAGE</button>
+                            
+                        </div>
+                    </div>
+                        
+                    </form>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-content">
+                  <div class="footer-logo">
+                    <!-- Your logo or site name here -->
+                    <img src="{% static "/images/cake3.jpg" %}" alt="Your Logo">
+                    <h1>GOPI</h1>
+                  </div>
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="{% url "myhomepage" %}">Home</a></li>
+                      <li><a href="{% url "about" %}">About</a></li>
+                      <li><a href="{% url "templates_page" %}">Template</a></li>
+                      <li><a href="{% url "contact" %}">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-social">
+                    <!-- Add social media icons and links here -->
+                    <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                    <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                    <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                    <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <p>&copy; 2023 Gopiwebsitedev.com. All rights reserved.</p>
+                </div>
+              </footer>
+              
+        </div>    
+    </div>
+    </div>
+
+    <script src="{% static "js/slider.js" %}"></script>
+</body>
+</html>

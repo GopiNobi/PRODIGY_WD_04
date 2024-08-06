@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="{% static "css/about.css" %}">
+</head>
+<body>
+    <div id="whole-container">
+    <header>
+        <div id="head">
+            <a href="{% url "gallery" %}" id="logo">GOPI</a>
+            <a href="tel:+91 6379125530" id="contact-btn" class="btn-btn">CONTACT ME</a>
+        </div>
+        <div id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+    <div id="content">
+        <div id="menu">
+            <div>
+                <a href="{% url "myhomepage" %}"><img src="{% static "/images/icons8-home-48.png" %}" alt="" width="33px" class="icons" title="HOME"></a>
+                <a href="{% url "about" %}"><img src="{% static "/images/icons8-admin-48.png" %}" alt="" width="33px" class="icons" title="ABOUT"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-trending-48.png" %}" alt="" width="33px" class="icons" title="TEMPLATES"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-code-48.png" %}" alt="" width="33px" class="icons" title="CODE"></a>
+                <a href="{% url "contact" %}"><img src="{% static "/images/icons8-contact-48.png" %}" alt="" width="33px" class="icons" title="CONTACT"></a>
+                <label>Social Media</label>
+                <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+                <label>Projects</label>
+                <a href=""><img src="{% static "/images/icons8-bakery-48.png" %}" alt="" width="33px" class="icons" title="MY PROJECTS"></a>
+            </div>   
+        </div>
+
+        <button class="hire-btn">HIRE ME</button>
+        <div id="about-content">
+        <div id="abt-img">
+            <div id="img-text">
+                <p>Hello I'm Gopi</p>
+                <p>A Passionate Designer and FullStack Developer </p>
+                <div><a href="{% static "/resume/Resume_SE.pdf" %}" download><button id="resume-btn">Get Resume <img src="{% static "/images/download.png" %}" alt=""></button></a></div>
+            </div>
+            <div id="img-part">
+                <img src="{% static "images/gopiconvo2.jpg" %}" alt="my-image">
+            </div> 
+        </div>
+        <div id="abt-education">
+            <button id="edu-button1">EDUCATION</button>
+            <button id="edu-button2">EXPERIENCE</button>
+            <div id="content1" class="edu-content">
+                <h2>EDUCATION</h2>
+                <div class="edu">
+                <pre>Vellore Institute of Technology,Vellore
+Bachelor of Computer Applications.
+Cgpa : 7.30.
+
+Swamy Vivekananda Matric Hr Sec School
+HSC.
+Percentage : 73%.
+
+Swamy Vivekananda Matric Hr Sec School
+SSLC.
+Percentage :80%.</pre>
+            </div>
+            </div>
+            <div id="content2" class="edu-content">
+                <h2>EXPERIENCE</h2>
+                <div class="edu">
+                    <pre><span class="edu-topics">Web Development</span>
+1.5 years of Experience.
+<span class="edu-topics">
+Other Skills</span>
+Data Analytics
+Machine Learning
+                    </pre>
+                </div>
+            </div>
+    </div>
+    <div id="abt-service">
+        <h2>My service provide for my clients</h2>
+        <div class="slider" id="skills">
+            <div class="slide">
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum.</p>
+            </div>
+            <div class="slide">
+                <h3>DEVELOPMENT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum.</p>
+            </div>
+            <div class="slide">
+                <h3>PHOTOSHOP</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum.</p>
+            </div>
+            <!-- Duplicate the first slide to create a loop effect -->
+            <div class="slide" id="fake-slide">
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, rerum.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="abt-clients">
+        <div class="statistics">
+            <div class="label">Clients</div>
+            <div class="count" id="clientCount"><div class="count-animation">
+                <span id="clientCounter">0</span>
+            </div>
+            </div>
+        </div>
+        <div class="statistics">
+            <div class="label">Projects</div>
+            <div class="count" id="projectCount"><div class="count-animation">
+                <span id="projectCounter">0</span>
+            </div>
+            </div>
+        </div>
+        <div class="statistics">
+            <div class="label">Templates</div>
+            <div class="count" id="projectCount"><div class="count-animation">
+                <span id="templateCounter">0</span> <span> + </span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- Your logo or site name here -->
+            <img src="{% static "/images/cake3.jpg" %}" alt="Your Logo">
+            <h1>GOPI</h1>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="{% url "myhomepage" %}">Home</a></li>
+              <li><a href="{% url "about" %}">About</a></li>
+              <li><a href="{% url "templates_page" %}">Template</a></li>
+              <li><a href="{% url "contact" %}">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <!-- Add social media icons and links here -->
+            <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+            <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+            <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+            <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Gopiwebsitedev.com. All rights reserved.</p>
+        </div>
+      </footer>
+</div>
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+ <script src="{% static "js/about.js" %}"></script>
+ <script src="{% static "js/slider.js" %}"></script>
+</body>
+</html>

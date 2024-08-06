@@ -1,0 +1,87 @@
+'{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/usergallery.css' %}">
+</head>
+<body>
+    <div id="whole-container">
+        <header>
+            <div id="head">
+                <a href="{% url "gallery" %}" id="logo">GOPI</a>
+                <a href="#" id="contact-btn" class="btn-btn">CONTACT ME</a>
+            </div>
+            <div id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+        <div id="content">
+            <div id="menu">
+                <div>
+                    <a href="{% url "myhomepage" %}"><img src="{% static "/images/icons8-home-48.png" %}" alt="" width="33px" class="icons" title="HOME"></a>
+                    <a href="{% url "about" %}"><img src="{% static "/images/icons8-admin-48.png" %}" alt="" width="33px" class="icons" title="ABOUT"></a>
+                    <a href="{% url "usergallery" %}"><img src="{% static "/images/icons8-trending-48.png" %}" alt="" width="33px" class="icons" title="TEMPLATES"></a>
+                    <a href="#"><img src="{% static "/images/icons8-code-48.png" %}" alt="" width="33px" class="icons" title="CODE"></a>
+                    <a href="#"><img src="{% static "/images/icons8-contact-48.png" %}" alt="" width="33px" class="icons" title="CONTACT"></a>
+                    <label>Social Media</label>
+                    <a href=""><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                    <a href=""><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                    <a href=""><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                    <a href=""><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+                    <label>Projects</label>
+                    <a href="#"><img src="{% static "/images/icons8-bakery-48.png" %}" alt="" width="33px" class="icons" title="MY PROJECTS"></a>
+                </div>   
+            </div>
+    </div>
+    
+    <!-- Your existing image gallery code goes here -->
+    <div id="gallery-content">
+    <div class="image-gallery">
+        {% for photo in photos.all %}
+            <div class="gallery-item">
+                <img src="{{ photo.image.url }}" alt="{{ photo.description }}">
+                <button class="view-button">View</button>
+                <div class="modal">
+                    <span class="close-button">&times;</span>
+                    <img class="modal-content" src="{{ photo.image.url }}" alt="{{ photo.description }}">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- Your logo or site name here -->
+            <img src="{% static "/images/cake3.jpg" %}" alt="Your Logo">
+            <h1>GOPI</h1>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="{% url "myhomepage" %}">Home</a></li>
+              <li><a href="{% url "about" %}">About</a></li>
+              <li><a href="{% url "gallery" %}">Template</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <!-- Add social media icons and links here -->
+            <a href="#"><img src="{% static "images/icons8-instagram-48.png" %}" alt="" width="25px"></a>
+            <a href="#"><img src="{% static "images/icons8-linkedin-48.png" %}" alt="" width="25px"></i></a>
+            <a href="#"><img src="{% static "images/icons8-github-48.png" %}" alt="" width="25px"></i></a>
+            <a href="#"><img src="{% static "images/icons8-facebook-48.png" %}" alt="" width="25px"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Gopiwebsitedev.com. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+</div>
+    <script src="{% static "js/usergallery.js"%}"></script>
+    <script src="{% static "js/slider.js"%}"></script>
+</body>
+</html>
+'

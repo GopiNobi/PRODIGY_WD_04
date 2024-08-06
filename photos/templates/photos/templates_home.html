@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Templates</title>
+    <link rel="stylesheet" href="{% static "css/temp.css" %}">
+</head>
+<body>
+    <div id="Whole-container">
+        <header>
+            <div id="head">
+                <a href="{% url "gallery" %}" id="logo">GOPI</a>
+                <a href="tel:+91 6379125530" id="contact-btn" class="btn-btn">CONTACT ME</a>
+            </div>
+            <div id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+        <div id="content">
+            <div id="menu">
+                <div>
+                    <a href="{% url "myhomepage" %}"><img src="{% static "/images/icons8-home-48.png" %}" alt="" width="33px" class="icons" title="HOME"></a>
+                <a href="{% url "about" %}"><img src="{% static "/images/icons8-admin-48.png" %}" alt="" width="33px" class="icons" title="ABOUT"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-trending-48.png" %}" alt="" width="33px" class="icons" title="TEMPLATES"></a>
+                <a href="{% url "templates_page" %}"><img src="{% static "/images/icons8-code-48.png" %}" alt="" width="33px" class="icons" title="CODE"></a>
+                <a href="{% url "contact" %}"><img src="{% static "/images/icons8-contact-48.png" %}" alt="" width="33px" class="icons" title="CONTACT"></a>
+                <label>Social Media</label>
+                <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+                <label>Projects</label>
+                <a href="#"><img src="{% static "/images/icons8-bakery-48.png" %}" alt="" width="33px" class="icons" title="MY PROJECTS"></a>
+                </div>   
+            </div>
+    </div>
+    
+    <div id="whole-template">
+    <h1>Pick Your Template</h1>
+    <input type="text" id="searchInput" placeholder="Search for websites">
+    <label for="searchInput" id="searchbar"><img src="{% static "/images/searchbar.png" %}" alt=""></label>
+    <div id="results"></div>
+    <div class="websites">
+        <div class="animate-top">
+            <a href="https://example.com">
+                <img src="{% static "images/cake3.jpg" %}" alt="" width="200px">
+            </a>
+            <a href="https://example.com">
+                <h2>Cake Website</h2>
+            </a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button">Live Preview</a>
+        </div>
+        
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>sweet Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview" >Live Preview</a>
+        </div> 
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div> 
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>sweet Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>Cake Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>bakery Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+        <div class="animate-top"><a href=""><img src="{% static "images/cake3.jpg" %}" alt="" width="200px"></a>
+            <a href=""><h2>sweet Website</h2></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptas incidunt aliquid sint error a dignissimos fugiat nostrum architecto.</p>
+            <a href="" class="live-preview-button" id="live_preview">Live Preview</a>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <!-- Your logo or site name here -->
+            <img src="{% static "/images/cake3.jpg" %}" alt="Your Logo">
+            <h1>GOPI</h1>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="{% url "myhomepage" %}">Home</a></li>
+              <li><a href="{% url "about" %}">About</a></li>
+              <li><a href="{% url "templates_page" %}">Template</a></li>
+              <li><a href="{% url "contact" %}">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <!-- Add social media icons and links here -->
+            <a href="https://www.instagram.com/x._indianarmy_.x/" target="_blank"><img src="{% static "/images/icons8-instagram-48.png" %}" alt="" width="33px" title="INSTAGRAM"></a>
+                <a href="https://twitter.com/GopiGop61111504" target="_blank"><img src="{% static "/images/icons8-twitter-48 (1).png" %}" alt="" width="33px" title="TWITTER"></a>
+                <a href="https://www.linkedin.com/in/gopi-a-70320b254" target="_blank"><img src="{% static "/images/icons8-linkedin-48.png" %}" alt="" width="33px" title="LINKED IN"></a>
+                <a href="https://github.com//gopinobi" target="_blank"><img src="{% static "/images/icons8-github-48.png" %}" alt=""width="33px" title="GIT HUB"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Gopiwebsitedev.com. All rights reserved.</p>
+        </div>
+      </footer>
+
+
+    </div>
+
+    <script src="{% static "js/slider.js" %}"></script>
+    <script src="{% static "js/search.js" %}"></script>
+</body>
+</html>
